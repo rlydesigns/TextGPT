@@ -24,19 +24,18 @@ Make sure you are running Python 3.x and install the packages listed below.
 
 
 ## Installing
-1. Setup a Twilio account and environment variables
-> - $ export ACCOUNT_SID='ACCOUNT SID'
-> - $ export AUTH_TOKEN='AUTH TOKEN'
+1. Setup a Twilio account 
 
-2. Download, setup and start ngrok on port 5000. Make sure to add /sms to the end of the route. 
+2. Set up an OpenAI Account. 
+
+3. Download, setup and start ngrok on port 5000. Make sure to add /sms to the end of the route. 
 - (Note: Port 80 and Port 3000 may work as well) 
 > - $ ./ngrok.exe http 5000
 
-3. Set Twilio's incoming message webhook to ngrok's http tunnel.
+4. Set Twilio's incoming message webhook to ngrok's http tunnel.
 
-4. Start the application.
-> - $ python receive.py
+5. Start the application.
 
-5. Register a caller ID to test.
+6. Register a caller ID to test.
 
-6. Send an inital message to the caller ID registered.
+7. Send an inital message to the caller ID registered.
